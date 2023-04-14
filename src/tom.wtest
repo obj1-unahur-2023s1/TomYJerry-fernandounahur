@@ -1,0 +1,17 @@
+import personajes.*
+
+test "la energia de tom inicial es 80" {
+
+	assert.equals(80,tom.energia())
+
+}
+test "tom es mas veloz que jerry"{
+	
+	assert.that(tom.esMAsVeloz(jerry))
+}
+test "3"{
+	assert.that(tom.esMAsVeloz(jerry))
+	tom.correA(jerry)
+	assert.notThat(tom.esMAsVeloz(jerry))
+	assert.equals(10,tom.posicion())
+}
